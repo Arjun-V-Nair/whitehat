@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My family Book</title>
+    <link rel="shortcut icon" href="https://i.ytimg.com/vi/vvxNEC_TOBM/maxresdefault.jpg">
+
+</head>
+<center>
+    <h3 id="title">My family</h3>
+    <img src="famjam1.png" id="fam">
+    <br>
+    <button id="next" onclick="ni()">next</button>
+</center>
+
+<script>
+  var images=[
+      "Me.jpg",
+      "Mom& Dad.jpg",
+      "Cousins.jpg",
+      "Uncle&Aunt.jpg",
+      "Maternal Grandma&Grandpa.jpg",
+      "Paternal Grandma& Grandpa.jpg",
+      "famjam1.png"
+  ] ; 
+  var txt=[
+  "Me",
+  "My Mom and Dad",
+  "Me and my cousins",
+  "My uncle and aunt",
+  "My maternal grandma and grandpa",
+  "My paternal grandma and grandpa",
+  "My family"
+  ];
+  var i = 0;
+function ni()
+{ 
+  if(i>6)
+  {
+    i=0;
+  }
+ document.getElementById("fam").src= images[i];
+ document.getElementById("title").innerHTML= txt[i];i++;
+  }
+
+</script>
+</html>
